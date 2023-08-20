@@ -35,6 +35,11 @@
    line-height: 165.4%; 
 }
 
+@mixin flex-column($gap) {
+   display: flex;
+   flex-direction: column;
+   row-gap: $gap
+}
 
 @mixin quotes {
    color: var(--dark-blue);
