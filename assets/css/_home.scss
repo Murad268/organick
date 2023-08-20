@@ -160,12 +160,13 @@
       row-gap: 20px;
    }
 
-   
- 
+
+
 }
 
 .testimonial {
    padding-top: 54px;
+   padding-bottom: 164px;
 
    .content {
       max-width: 1030px;
@@ -270,29 +271,105 @@
 }
 
 .offer {
+   margin-top: 10px;
    padding: 200px 0;
    background: var(--dark-blue);
+
    &__wrapper {
       margin-top: 50px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       column-gap: 20px;
    }
+
    &__top {
       @include flex-justify-content;
+
       &__left {
          &__italic {
             @include italic-title
          }
+
          h2 {
             color: var(--main-white)
          }
       }
+
       a {
          @include default-button-yellow;
+
          div {
             @include flex-with-gap(13px)
          }
+      }
+   }
+}
+
+.eco {
+   &__bottom {
+      padding: 100px 0;
+      &__el {
+         position: relative;
+         &__box {
+           width: 320px;
+           height: 96px;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           background: var(--white-first);
+           @include flex-centerable;
+           border-radius: 10px;
+          h5 {
+            font-weight: 500 !important;
+          }
+         }
+      }
+      &__wrapper {
+         display: flex;
+         gap: 20px;
+         &>div {
+            flex: 1;
+         }
+      }
+   }
+   position: relative;
+
+   &__image {
+      height: 900px;
+      width: 50%;
+   }
+
+   &__box {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translateY(-50%);
+      background: var(--white-first);
+      padding: 78px 89px;
+      border-radius: 25px;
+      max-width: 800px;
+
+      &__rows {
+         @include flex-column(35px)
+      }
+
+      &__row {
+         &__title {
+            margin-bottom: 8px;
+         }
+
+         p {
+            @include paragraph
+         }
+      }
+
+      &__title {
+         @include italic-title
+      }
+
+      h2 {
+         margin-bottom: 35px;
       }
    }
 }
