@@ -457,3 +457,39 @@
       }
    }
 }
+
+.subscribe {
+   padding-top: 80px;
+   &__box {
+      padding: 70px 40px;
+      @include flex-justify-content;
+      &__right {
+         &__input {
+            width: 349px;
+            height: 80px;
+            overflow: hidden;
+            input {
+               border-radius: 16px;
+               background: #FFF;
+               border: none;
+               padding-left: 23px;
+            }
+         }
+         form {
+            @include flex-with-gap(6px)
+         }
+         &__btn {
+            a {
+               @include default-button
+            }
+         }
+      }
+    
+      h2 {
+         max-width: 357px;
+         color: var(--white-first)
+      }
+   }
+}
+
+
