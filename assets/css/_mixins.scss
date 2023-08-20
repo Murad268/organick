@@ -83,6 +83,7 @@
    height: 80px;
    border-radius: 16px;
    background: var(--light-white);
+   border: 1px solid var(--dark-blue);
    @include flex-centerable;
    @include titles-styles(20px, var(----white-first), var(--main-font))
 }
