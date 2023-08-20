@@ -1,0 +1,71 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+ul, ol {
+   list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+
+input {
+   height: 100%;
+   width: 100%;
+}
+
+img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+
+
+
+
+body {
+   font-family: var(--main-font);
+}
+h1 {
+   @include titles-styles(70px, var(--dark-blue), var(--main-font))
+}
+
+h2 {
+   @include titles-styles(50px, var(--dark-blue), var(--main-font))
+}
+
+h3 {
+   @include titles-styles(40px, var(--dark-blue), var(--main-font))
+}
+
+h4 {
+   @include titles-styles(35px, var(--dark-blue), var(--main-font))
+}
+
+h5 {
+   @include titles-styles(30px, var(--dark-blue), var(--main-font))
+}
+
+
+h6 {
+   @include titles-styles(25px, var(--dark-blue), var(--main-font))
+}
+
+
+.container {
+   max-width: 1400px;
+   width: 95%;
+   margin: 0 auto;
+}
+
+.arrow {
+   display: block;
+   width: 19px;
+   height: 19px;
+}

@@ -1,0 +1,108 @@
+.header {
+   &__banner {
+      padding: 247px 0;
+      &__body {
+         max-width: 530px;
+         &__italic {
+            @include italic-title
+         }
+         a {
+            margin-top: 23px;
+            @include default-button-yellow;
+         
+              div {
+               @include flex-with-gap(10px);
+              }
+            
+         }
+      }
+   }
+   
+}
+
+
+
+
+.top {
+   padding-top: 145px;
+   &__wrapper {
+      @include flex-with-gap(30px)
+   }
+   &__column {
+      height: 376px;
+      border-radius: 25px;
+      overflow: hidden;
+      position: relative;
+      &__body {
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         left: 72px;
+         max-width: 277px;
+         &__top {
+           @include italic-title
+         }
+      }
+      &.first {
+         .top__column__body__top {
+            color: var(--white-first);
+            font-family: var(--font-third);
+         }
+         h3 {
+            color: var(--white-first)
+         }
+      }
+
+      &.second {
+         .top__column__body__top {
+            color: var(--light-blue);
+            font-family: var(--font-third);
+         } 
+      }
+   }
+}
+
+.about_us {
+   padding-top: 288px;
+   &__wrapper {
+      @include flex-with-gap(0px);
+   }
+   &__image, &__desc {
+      flex: 1;
+   }
+   &__desc {
+      a {
+         div {
+            @include flex-with-gap(14px);
+         }
+         margin-top: 30px;
+         @include pagination-button
+      }
+      &__title {
+         @include italic-title;
+      }
+      p {
+         margin-bottom: 14px;
+         @include paragraph
+      }
+      &__rows {
+         margin-top: 48px;
+         display: flex;
+         flex-direction: column;
+         row-gap: 35px;
+        
+      }
+      &__row {
+         @include flex-with-gap(46px);
+         max-width: 530px;
+         &__icon {
+            width: 46px;
+            height: 46px;
+            flex-shrink: 0;
+         }
+         p {
+            @include paragraph
+         }
+      }
+   }
+}

@@ -1,0 +1,41 @@
+.navbar {
+   padding: 58px 0;
+   &__wrapper {
+      @include flex-justify-content
+   }
+   &__links {
+      @include flex-with-gap(150px);
+      ul {
+         @include flex-with-gap(30px);
+         a, li {
+            @include navbar-links;
+         }
+      }
+   }
+   &__btns {
+      @include flex-with-gap(24px);
+      &__cart {
+         span {
+            @include titles-styles(18px, var(--dark-blue), var(--main-font))
+         }
+      }
+   }
+   &__logo {
+      width: 198.791px;
+      height: 53.716px;
+      flex-shrink: 0;
+   }
+   &__btns {
+      &__cart {
+         @include flex-with-gap(12px);
+      }
+      &__search, &__cart span:first-child {
+         display: block;
+         width: 56px;
+         height: 56px;
+         flex-shrink: 0;
+         border-radius: 100%;
+         overflow: hidden;
+      }
+   }
+}

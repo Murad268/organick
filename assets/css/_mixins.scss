@@ -1,0 +1,97 @@
+@mixin titles-styles($font-size, $color, $family) {
+   color: $color;
+   font-size: $font-size;
+   font-style: normal;
+   font-weight: 800;
+   line-height: normal;
+   font-family: $family;
+}
+
+
+@mixin flex-centerable {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@mixin flex-with-gap($gap) {
+   display: flex;
+   align-items: center;
+   column-gap: $gap;
+}
+
+
+@mixin flex-justify-content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+@mixin paragraph {
+   color: var(--main-gray);
+   font-family: var(--font-second);
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 165.4%; 
+}
+
+
+@mixin quotes {
+   color: var(--dark-blue);
+   text-align: center;
+   font-family: var(--font-second);
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 165.4%; 
+}
+
+@mixin default-button {
+   width: 237px;
+   height: 80px;
+   border-radius: 16px;
+   background: var(--dark-blue);
+   @include flex-centerable;
+   @include titles-styles(20px, var(--main-white), var(--main-font))
+}
+
+@mixin pagination-button {
+   width: 240px;
+   height: 80px;
+   border-radius: 16px;
+   background: var(--dark-blue);
+   @include flex-centerable;
+   @include titles-styles(20px, var(--white-first), var(--main-font))
+}
+
+@mixin default-button-yellow {
+   width: 237px;
+   height: 80px;
+   border-radius: 16px;
+   background: var(--light-yellow);
+   @include flex-centerable;
+   @include titles-styles(20px, var(--dark-blue), var(--main-font))
+}
+
+@mixin default-button-white {
+   width: 237px;
+   height: 80px;
+   border-radius: 16px;
+   background: var(--light-white);
+   @include flex-centerable;
+   @include titles-styles(20px, var(----white-first), var(--main-font))
+}
+
+@mixin navbar-links {
+   @include titles-styles(20px, var(--dark-blue), var(--main-font))
+}
+
+
+@mixin italic-title {
+   color: var(--light-blue);
+   font-family: var(--font-third);
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+}
