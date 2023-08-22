@@ -1,6 +1,13 @@
 .product {
    padding-top: 114px;
    &__info {
+      &__contents {
+         @include paragraph;
+         max-width: 1130px;
+         margin: 0 auto;
+         margin-top: 27px;
+         text-align: center;
+      }
       &__btns {
          @include flex-with-gap(20px);
          width: max-content;
@@ -9,9 +16,10 @@
       &__btn {
          border-radius: 25px;
          width: max-content;
-         background: var(--dark-blue);
-         opacity: 0.2;
+         background: rgba(39, 76, 91, 0.4);
+       
          padding: 23px 61px;
+
       }
    }
    &__add {
@@ -98,4 +106,11 @@
       }
    }
 
+}
+
+.related {
+   padding-top: 140px;
+   h2 {
+      text-align: center;
+   }
 }
