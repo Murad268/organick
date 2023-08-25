@@ -1,5 +1,7 @@
 .product {
-   padding-top: 114px;
+   &.product {
+      padding-top: 114px;
+   }
    &__info {
       &__contents {
          @include paragraph;
@@ -17,9 +19,7 @@
          border-radius: 25px;
          width: max-content;
          background: rgba(39, 76, 91, 0.4);
-       
          padding: 23px 61px;
-
       }
    }
    &__add {
@@ -37,20 +37,15 @@
          }
          a {
             @include pagination-button;
-
-         
-
             div {
                @include flex-with-gap(13px)
             }
          }
-
          input {
             width: 134px;
             height: 80px;
             border-radius: 25px;
             border: 2px solid var(--dark-blue);
-
             &::placeholder {
                color: var(--dark-blue);
                font-family: var(main-font);
@@ -58,30 +53,23 @@
                font-style: normal;
                font-weight: 700;
                line-height: normal;
-
             }
-
             &:focus {
                outline: none;
             }
-
             text-align: center;
          }
       }
    }
-
    &__wrapper {
       @include flex-justify-content
    }
-
    &__img,
    &__desc {
       flex: 1;
    }
-
    &__prices {
       @include flex-with-gap(6px);
-
       &__old {
          color: var(--main--gray);
          text-align: center;
@@ -92,22 +80,17 @@
          line-height: normal;
          text-decoration: line-through;
       }
-
    }
-
    &__desc {
       p {
          @include paragraph;
          margin-top: 27px;
       }
-
       .testimonial__slider__stars {
          margin: 9px 0;
       }
    }
-
 }
-
 .related {
    padding-top: 140px;
    h2 {
