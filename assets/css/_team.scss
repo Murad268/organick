@@ -1,0 +1,40 @@
+.team {
+   padding-top: 150px;
+   &__item {
+      &__image {
+         height: 486px;
+         border-radius: 30px 30px 0 0;
+         overflow: hidden;
+      }
+      &__bottom {
+         @include flex-justify-content;
+         align-items: flex-end;
+         &__left {
+            @include flex-column(7px);
+            align-items: flex-start;
+            &>div {
+               @include italic-title
+            }
+         }
+
+         &__right {
+            @include flex-with-gap(17px);
+            color: var(--dark-blue);
+            font-size: 25px;
+         }
+        
+      }
+   }
+   &__top {
+      max-width: 852px;
+      margin: 0 auto;
+      text-align: center;
+      &__main {
+         @include italic-title
+      }
+      &>p {
+         @include paragraph;
+         margin-top: 16px;
+      }
+   }
+}

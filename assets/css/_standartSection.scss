@@ -1,0 +1,20 @@
+.standartSection {
+   padding-top: 114px;
+   &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+   }
+   &__element {
+      &__image {
+         height: 438px;
+         border-radius: 40px;
+         overflow: hidden;
+         margin-bottom: 18px;
+      }
+      p {
+         @include italic-title;
+         margin-top: 7px;
+      }
+   }
+}

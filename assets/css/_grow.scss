@@ -176,9 +176,7 @@
 
    &__column {
       @include flex-with-gap(45px);
-      span {
-
-      }
+   
       &__num {
          width: 69px;
          height: 69px;
