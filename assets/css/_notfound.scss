@@ -1,0 +1,31 @@
+.notfound {
+   padding-right: 125px;
+   background: rgb(183, 200, 200);
+   @include flex-justify-content;
+   &__img {
+      width: 600px;
+      img {
+         object-fit: contain;
+      }
+   }
+   &__body {
+      padding-top: 50px;
+      max-width: 533px;
+      float: right;
+     
+      h4 {
+         margin: 10px 0;
+         margin-left: 30px;
+      }
+      p {
+         @include paragraph
+      }
+      a {
+         margin-top: 30px;
+         @include pagination-button;
+         div {
+            @include flex-with-gap(14px)
+         }
+      }
+   }
+}

@@ -1,0 +1,25 @@
+.about__form {
+   max-width: 964px;
+   margin: 0 auto;
+   margin-top: 140px;
+
+   h5 {
+      margin-bottom: 24px;
+   }
+
+   p, .ab_org {
+      @include paragraph;
+   }
+   .ab_org {
+      margin: 20px 0;
+      text-align: center;
+   }
+   img {
+      border-radius: 30px;
+      margin-top: 40px;
+   }
+   .second__p {
+      @include paragraph;
+      margin-top: 30px;
+   }
+}

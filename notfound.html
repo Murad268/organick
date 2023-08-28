@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Babylonica&family=Bangers&family=Bebas+Neue&family=Cormorant:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&family=GFS+Didot&family=Inter:wght@100;300;400;500;600;700;800;900&family=Kaushan+Script&family=Maven+Pro:wght@400;500;600;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Playfair+Display+SC:wght@400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;700;900&family=Rubik+Burned&family=Russo+One&family=Wix+Madefor+Text:wght@400;500;600;700;800&family=Yellowtail&display=swap"
+      rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Babylonica&family=Bangers&family=Bebas+Neue&family=Cormorant:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&family=GFS+Didot&family=Inter:wght@100;300;400;500;600;700;800;900&family=Kaushan+Script&family=Maven+Pro:wght@400;500;600;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Playfair+Display+SC:wght@400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;700;900&family=Rubik+Burned&family=Russo+One&family=Wix+Madefor+Text:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="./assets/css/main.min.css">
+   <title>Document</title>
+</head>
+<style>
+   .notfound {
+      padding: 150px 0;
+
+   }
+</style>
+
+<body>
+   <header class="header">
+      <nav class="navbar">
+         <div class="container">
+            <div class="navbar__wrapper">
+               <div class="navbar__links">
+                  <div class="navbar__logo">
+                     <a href="">
+                        <img src="./assets/icons/Logo.png" alt="">
+                     </a>
+                  </div>
+                  <ul>
+                     <li><a href="">Home</a></li>
+                     <li><a href="">About</a></li>
+                     <li>Pages</li>
+                     <li><a href="">Shop</a></li>
+                     <li><a href="">Projects</a></li>
+                     <li><a href="">News</a></li>
+                  </ul>
+               </div>
+               <div class="navbar__btns">
+                  <div class="navbar__btns__search">
+                     <img src="./assets/icons/Search Icon.png" alt="">
+                  </div>
+                  <div class="navbar__btns__cart">
+                     <span>
+                        <img src="./assets/icons/Cart Icon.png" alt="">
+                     </span>
+                     <span>Cart (0)</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+   </header>
+   <main>
+
+
+      <section class="notfound">
+         <div class="notfound__img">
+            <img src="./assets/images/notfound.png" alt="">
+         </div>
+         <div class="notfound__body">
+            <div class="notfound__body__num">
+               <svg xmlns="http://www.w3.org/2000/svg" width="503" height="220" viewBox="0 0 503 220" fill="none">
+                  <path
+                     d="M156.357 134.766V170.215H2.8418L0.351562 142.383L87.6562 2.92969H123.838L84.5801 67.9688L44.8828 134.766H156.357ZM133.506 2.92969V216.211H87.8027V2.92969H133.506Z"
+                     fill="#8FA8A8" />
+                  <path
+                     d="M324.668 90.5273V128.467C324.668 144.092 322.91 157.617 319.395 169.043C315.977 180.469 310.996 189.893 304.453 197.314C298.008 204.736 290.293 210.254 281.309 213.867C272.422 217.383 262.559 219.141 251.719 219.141C243.027 219.141 234.922 218.018 227.402 215.771C219.883 213.525 213.096 210.059 207.041 205.371C201.084 200.586 195.957 194.629 191.66 187.5C187.363 180.371 184.043 171.875 181.699 162.012C179.453 152.148 178.33 140.967 178.33 128.467V90.5273C178.33 74.707 180.039 61.1328 183.457 49.8047C186.973 38.4766 192.002 29.1016 198.545 21.6797C205.088 14.2578 212.803 8.78906 221.689 5.27344C230.674 1.75781 240.586 0 251.426 0C260.117 0 268.174 1.12305 275.596 3.36914C283.115 5.61523 289.902 9.08203 295.957 13.7695C302.012 18.457 307.139 24.3652 311.338 31.4941C315.635 38.623 318.906 47.1191 321.152 56.9824C323.496 66.748 324.668 77.9297 324.668 90.5273ZM278.965 134.18V84.5215C278.965 77.1973 278.525 70.8496 277.646 65.4785C276.865 60.0098 275.693 55.3711 274.131 51.5625C272.666 47.7539 270.811 44.6777 268.564 42.334C266.318 39.9902 263.73 38.2812 260.801 37.207C257.969 36.0352 254.844 35.4492 251.426 35.4492C247.129 35.4492 243.271 36.3281 239.854 38.0859C236.436 39.8438 233.555 42.627 231.211 46.4355C228.867 50.1465 227.061 55.1758 225.791 61.5234C224.619 67.7734 224.033 75.4395 224.033 84.5215V134.18C224.033 141.504 224.424 147.9 225.205 153.369C226.084 158.838 227.256 163.525 228.721 167.432C230.283 171.24 232.188 174.365 234.434 176.807C236.68 179.15 239.268 180.859 242.197 181.934C245.127 183.008 248.301 183.545 251.719 183.545C256.016 183.545 259.824 182.715 263.145 181.055C266.465 179.297 269.297 176.514 271.641 172.705C274.082 168.799 275.889 163.672 277.061 157.324C278.33 150.977 278.965 143.262 278.965 134.18Z"
+                     fill="#8FA8A8" />
+                  <path
+                     d="M502.646 134.766V170.215H349.131L346.641 142.383L433.945 2.92969H470.127L430.869 67.9688L391.172 134.766H502.646ZM479.795 2.92969V216.211H434.092V2.92969H479.795Z"
+                     fill="#8FA8A8" />
+               </svg>
+            </div>
+            <h4>Page not found</h4>
+            <p>The page you are looking for doesn't exist or has been moved</p>
+            <a href="">
+               <div>
+                  <span>Go to Homepage</span>
+                  <span class="arrow">
+                     <img src="./assets/icons/Aerrow.svg" alt="">
+                  </span>
+               </div>
+            </a>
+         </div>
+      </section>
+
+
+
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__wrapper">
+               <div class="contacts">
+                  <h6>Contact Us</h6>
+                  <ul>
+                     <li>
+                        <div class="contacts__list__title">Email</div>
+                        <span>needhelp@Organia.com</span>
+                     </li>
+                     <li>
+                        <div class="contacts__list__title">Phone</div>
+                        <span> 666 888 888</span>
+                     </li>
+                     <li>
+                        <div class="contacts__list__title">Address</div>
+                        <span>88 road, borklyn street, USA</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="center">
+                  <div class="navbar__logo">
+                     <img src="./assets/icons/Logo.png" alt="">
+                  </div>
+                  <p>
+                     Simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum simply dummy text of the printing
+                  </p>
+               </div>
+               <div class="utility">
+                  <h6>Utility Pages</h6>
+                  <ul>
+                     <li><a href="">Style Guide</a></li>
+                     <li><a href="">404 Not Found</a></li>
+                     <li><a href="">Password Protected</a></li>
+                     <li><a href="">Licences</a></li>
+                     <li><a href="">Changelog</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </main>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>
