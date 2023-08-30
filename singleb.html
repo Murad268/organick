@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Babylonica&family=Bangers&family=Bebas+Neue&family=Cormorant:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&family=GFS+Didot&family=Inter:wght@100;300;400;500;600;700;800;900&family=Kaushan+Script&family=Maven+Pro:wght@400;500;600;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Playfair+Display+SC:wght@400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;700;900&family=Rubik+Burned&family=Russo+One&family=Wix+Madefor+Text:wght@400;500;600;700;800&family=Yellowtail&display=swap"
+      rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Babylonica&family=Bangers&family=Bebas+Neue&family=Cormorant:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&family=GFS+Didot&family=Inter:wght@100;300;400;500;600;700;800;900&family=Kaushan+Script&family=Maven+Pro:wght@400;500;600;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Playfair+Display+SC:wght@400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;700;900&family=Rubik+Burned&family=Russo+One&family=Wix+Madefor+Text:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="./assets/css/main.min.css">
+   <title>Document</title>
+</head>
+<style>
+   .header__banner {
+      padding: 150px 0;
+      background-image: url('./assets/images/singlep.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 700px;
+      position: relative;
+   }
+
+   .header__banner__box {
+      position: absolute;
+      padding: 83px;
+      border-radius: 30px 30px 0px 0px;
+      background: var(--white-first);
+      max-width: 90%;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -90px;
+   }
+
+   .header__banner__box__top {
+      display: flex;
+      align-items: center;
+      column-gap: 30px
+   }
+
+   .header__banner__box__top strong {
+      color: #274C5B;
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+   }
+
+   .header__banner__box__top {
+      color: #274C5B;
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+   }
+
+   .header__banner__box__top h1 {
+      margin: 20px 0;
+   }
+
+   .header__banner__box p {
+      color: #525C60;
+      font-family: Open Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 165.4%;
+      max-width: 726px;
+   }
+
+   .header__banner__box__top__user {
+      display: flex;
+      align-items: center;
+      column-gap: 8px
+   }
+
+   .header__banner__box__top__user img {
+      display: block;
+      margin-top: 1px;
+   }
+</style>
+
+<body>
+   <header class="header">
+      <nav class="navbar">
+         <div class="container">
+            <div class="navbar__wrapper">
+               <div class="navbar__links">
+                  <div class="navbar__logo">
+                     <a href="">
+                        <img src="./assets/icons/Logo.png" alt="">
+                     </a>
+                  </div>
+                  <ul>
+                     <li><a href="">Home</a></li>
+                     <li><a href="">About</a></li>
+                     <li>Pages</li>
+                     <li><a href="">Shop</a></li>
+                     <li><a href="">Projects</a></li>
+                     <li><a href="">News</a></li>
+                  </ul>
+               </div>
+               <div class="navbar__btns">
+                  <div class="navbar__btns__search">
+                     <img src="./assets/icons/Search Icon.png" alt="">
+                  </div>
+                  <div class="navbar__btns__cart">
+                     <span>
+                        <img src="./assets/icons/Cart Icon.png" alt="">
+                     </span>
+                     <span>Cart (0)</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <div class="header__banner">
+         <div class="header__banner__box">
+            <div class="header__banner__box__top">
+               <div class="header__banner__box__top__date">
+                  <strong>Posted On:</strong>
+                  January 6, 2022
+                  By Rachi Card
+               </div>
+               <div class="header__banner__box__top__user">
+                  <span>
+                     <img src="./assets/icons/Vector.svg" alt="">
+                  </span>
+                  <span>By Rachi Card</span>
+               </div>
+            </div>
+            <h1>Research More Organic Food</h1>
+            <p>
+               Established fact that a reader will be distracted by the readable content of a page when looking a
+               layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+               opposed
+            </p>
+         </div>
+      </div>
+   </header>
+   <main>
+
+
+
+      <section class="singleb">
+         <div class="singleb__wrapper">
+            <p>Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully
+               researched data and enterprise process improvements. Collaboratively expedite quality manufactured
+               products via client-focused results quickly communicate enabled technology and turnkey leadership skills.
+               Uniquely enable accurate supply chains rather than friction technology.</p>
+            <h3>Preferred Form of Vitamin D?</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+               looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+               letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            <ul>
+               <li> Publishing packages and web pageLorem Ipsum as their default</li>
+               <li> Content here, content here', making it look like readable</li>
+               <li> Packages and web pageLorem Ipsum as their default</li>
+            </ul>
+
+            <div class="singlep__ic">
+               “The first rule of any organic used in a business is that nature applied to an efficient operation will
+               magnify the efficiency. The second is that organic applied to an inefficient operation will magnify the
+               health.”
+            </div>
+
+            <h4>Make perfect organic product with us</h4>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+               looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+               letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            <ol>
+               <li>Publishing packages and web pageLorem Ipsum as their default</li>
+               <li> Content here, content here', making it look like readable</li>
+               <li> Packages and web pageLorem Ipsum as their default</li>
+               <li> more-or-less normal distribution of letters</li>
+            </ol>
+         </div>
+      </section>
+
+      <section class="subscribe">
+         <div class="container">
+            <div class="subscribe__box">
+               <h2>Subscribe to
+                  our Newsletter
+               </h2>
+               <div class="subscribe__box__right">
+                  <form action="">
+                     <div class="subscribe__box__right__input">
+                        <input placeholder="Your Email Address" type="text">
+                     </div>
+                     <div class="subscribe__box__right__btn">
+                        <a href="">Subscribe</a>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__wrapper">
+               <div class="contacts">
+                  <h6>Contact Us</h6>
+                  <ul>
+                     <li>
+                        <div class="contacts__list__title">Email</div>
+                        <span>needhelp@Organia.com</span>
+                     </li>
+                     <li>
+                        <div class="contacts__list__title">Phone</div>
+                        <span> 666 888 888</span>
+                     </li>
+                     <li>
+                        <div class="contacts__list__title">Address</div>
+                        <span>88 road, borklyn street, USA</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="center">
+                  <div class="navbar__logo">
+                     <img src="./assets/icons/Logo.png" alt="">
+                  </div>
+                  <p>
+                     Simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum simply dummy text of the printing
+                  </p>
+               </div>
+               <div class="utility">
+                  <h6>Utility Pages</h6>
+                  <ul>
+                     <li><a href="">Style Guide</a></li>
+                     <li><a href="">404 Not Found</a></li>
+                     <li><a href="">Password Protected</a></li>
+                     <li><a href="">Licences</a></li>
+                     <li><a href="">Changelog</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </main>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.singleb {
+   margin-top: 100px;
+
+   .singlep__ic {
+      display: flex;
+      max-width: 936px;
+      padding: 69px 59px;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 10px;
+      border-radius: 30px;
+      background: #F1EDEA;
+      color: var(--dark-blue);
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 165.4%;
+      margin-top: -60px;
+      /* 33.08px */
+   }
+
+   &__wrapper {
+      max-width: 936px;
+      margin: 0 auto;
+   }
+
+   h4 {
+      margin-top: 30px;
+   }
+
+   p,
+   ul,
+   ol {
+      @include paragraph
+   }
+   ol {
+      padding-left: 20px;
+   }
+   p {
+      margin: 22px 0;
+   }
+
+   ul {
+      margin: 22px 0 119px 0;
+      list-style-type: disc;
+      padding-left: 20px;
+   }
+}
